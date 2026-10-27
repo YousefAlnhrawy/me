@@ -1,10 +1,20 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Almarai:wght@300;400;700;800&family=Cairo:wght@200..1000&family=El+Messiri:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"');
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Almarai:wght@300;400;700;800&family=Cairo:wght@200..1000&family=El+Messiri:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"');
 
+
+h1{
+  font-family: "Almarai", sans-serif;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    /* font-family: "Almarai", sans-serif; */
+    
   }
   body {
     height: 100vh;
@@ -12,6 +22,9 @@
     align-items: center;
     justify-content: center;
     background-color: #f4f4f4;
+  }
+  a{
+    text-decoration: none;
   }
   
 .profile-card {
@@ -32,7 +45,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 36%;
+    height: 26%;
     width: 100%;
     border-radius: 24px 24px 0 0;
     background-color: #D0E2DD;
@@ -43,6 +56,7 @@
     height: 150px;
     width: 150px;
     border-radius: 50%;
+    margin-top: 10%;
     background-color: #245544;
     padding: 3px;
     margin-bottom: 10px;
@@ -65,28 +79,41 @@
   
 .text-data .name {
     font-size: 22px;
-    font-weight: 500;
+    font-weight: bold;
   }
   
   .text-data .job {
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 600;
+    margin-top: 10px;
   }
   .text-data .number {
     margin-top: 30px;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: bold;
+    cursor: pointer;
   }
   .text-data .email {
     margin-top: 5px;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 600;
+    cursor: pointer;
   }
+  
   
 .buttons .button {
   color: #fff;
-  font-size: 14px;
-  font-weight: 400;
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* align-items: center; */
+  font-size: 19px;
+  font-weight: bold;
   border: none;
   border-radius: 24px;
   margin: 0 10px;
@@ -94,11 +121,17 @@
   padding: 8px 24px;
   background-color: #245544;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+   -ms-grid-row-align: center;
+   -ms-grid-column-align: center;
+   place-self: center;
+
 }
 
 .buttons .button:hover {
-  background-color: #245544;
+  background-color: #006a45;
 }
 
 
@@ -121,4 +154,17 @@
     background-color: #4070f4;
     text-decoration: none;
   }
-  
+  .name{
+   font-family: "Almarai", sans-serif;
+}
+ .job{
+  margin-top: 20px;
+  margin-bottom: 40px;
+
+  font-family: "Almarai", sans-serif;
+  color: #245544;
+  font-weight: bold;
+}
+ .number{
+  display: inline;
+}
