@@ -2,7 +2,7 @@ var saveBtn = document.getElementById("save-btn");
 saveBtn.addEventListener("click", function () {
   // Get the contact information from the website
   var contact = {
-    name: "Yousef NMR.ADV",
+    name: "Yousef Alnhrawy",
     phone: "0531870855",
     email: "yousefelnhrawy1@gmail.com"
   };
